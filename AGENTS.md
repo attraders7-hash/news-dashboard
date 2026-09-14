@@ -10,7 +10,7 @@ A 2×2 grid of 4 Pakistani YouTube live news channels that runs in ANY Chrome br
 
 ## Current Video IDs (in deployed index.html)
 - Top-left (Geo News): `t3fvgmDDmdc` — LIVE
-- Top-right (92 News HD): `PfO2i8XReZA` — LIVE (old ID `ThPmgOTmtzg` went private on 2026-09-14)
+- Top-right (Makkah Live, replaced 92 News HD): `qjUTWWftNjc` — LIVE (old 92 News ID `PfO2i8XReZA`)
 - Bottom-left (Dunya News): `e2XVSUYh4S0` — LIVE (replaced City 42, then 24 News)
 - Bottom-right (ARY News): `5FW9ZVMR_7M` — LIVE
 

@@ -16,10 +16,10 @@ ask the assistant to refresh the ID (it re-verifies live status and pushes a fix
 
 KEY DIFFERENCE (why some channels work forever)
 24/7 channels = ONE never-ending live stream, one stable ID:
-  Geo News    t3fvgmDDmdc   (LIVE)
-  92 News HD  PfO2i8XReZA   (LIVE)  [old ThPmgOTmtzg went PRIVATE 2026-09-14]
-  Dunya News  e2XVSUYh4S0   (LIVE)
-  ARY News    5FW9ZVMR_7M   (LIVE)
+Geo News    t3fvgmDDmdc   (LIVE)
+   Makkah Live qjUTWWftNjc   (LIVE)  [replaced 92 News HD PfO2i8XReZA]
+   Dunya News  e2XVSUYh4S0   (LIVE)
+   ARY News    5FW9ZVMR_7M   (LIVE)
 
 Non-24/7 canvas
 City 42 does NOT run a continuous 24/7 stream — only one-time event broadcasts
