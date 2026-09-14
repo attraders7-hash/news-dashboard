@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4-Channel News Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; background: #000; overflow: hidden; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    gap: 2px;
+    background: #000;
+  }
+  .cell { position: relative; background: #000; }
+  iframe { width: 100%; height: 100%; border: 0; }
+  .label {
+    position: absolute; top: 8px; left: 8px; z-index: 5;
+    background: rgba(0,0,0,0.7); color: #fff;
+    font-family: Arial, sans-serif; font-size: 14px;
+    padding: 4px 10px; border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="cell"><div class="label">Geo News</div><iframe id="c0" allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/t3fvgmDDmdc?autoplay=1&mute=1&controls=1&rel=0"></iframe></div>
+    <div class="cell"><div class="label">92 News HD</div><iframe id="c1" allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/PfO2i8XReZA?autoplay=1&mute=1&controls=1&rel=0"></iframe></div>
+    <div class="cell"><div class="label">Dunya News</div><iframe id="c2" allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/e2XVSUYh4S0?autoplay=1&mute=1&controls=1&rel=0"></iframe></div>
+    <div class="cell"><div class="label">ARY News</div><iframe id="c3" allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/5FW9ZVMR_7M?autoplay=1&mute=1&controls=1&rel=0"></iframe></div>
+  </div>
+</body>
+</html>

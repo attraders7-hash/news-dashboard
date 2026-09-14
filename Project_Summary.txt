@@ -1,0 +1,52 @@
+Project: 4-Channel News Dashboard (GitHub Pages — LED TV)
+
+Goal: A 2x2 grid of 4 Pakistani YouTube live news channels that runs in ANY Chrome browser —
+including an LED TV's browser — via a public URL. No PC/ server required at the TV.
+
+Status: FRESH COPY — READY FOR NEW DEPLOYMENT
+
+Live URL
+TBD — this copy deploys to a NEW GitHub Pages link (not the old news-dashboard link).
+Once deployed, open the new URL in any Chrome (Fully Kiosk Browser on Android TV recommended for fullscreen).
+
+Actual live view for the TV
+All embeds verified currently-LIVE unless noted.
+If a tile goes blank "Video unavailable", it means the channel's live stream ended/rotated —
+ask the assistant to refresh the ID (it re-verifies live status and pushes a fix).
+
+KEY DIFFERENCE (why some channels work forever)
+24/7 channels = ONE never-ending live stream, one stable ID:
+  Geo News    t3fvgmDDmdc   (LIVE)
+  92 News HD  PfO2i8XReZA   (LIVE)  [old ThPmgOTmtzg went PRIVATE 2026-09-14]
+  Dunya News  e2XVSUYh4S0   (LIVE)
+  ARY News    5FW9ZVMR_7M   (LIVE)
+
+Non-24/7 canvas
+City 42 does NOT run a continuous 24/7 stream — only one-time event broadcasts
+(assemblies, ceremonies) that EXPIRE. Any City 42 ID goes stale hours after the event ends.
+That's why it was removed (replaced 24 News HD, then Dunya News bottom-left).
+
+HOSTING (how it got on the internet)
+GitHub Pages on repo: edsavvyaios-creator/news-dashboard (branch main, root /)
+File served: index.html in the repo = the dashboard (served from C:\Users\haaid\AppData\Local\Temp\opencode\deploy\index.html)
+Deployed via: git push (git is installed; gh CLI NOT installed).
+Why Pages: static host, no Python needed at runtime, works from any Chrome.
+
+FILE LAYOUT NOTES
+index.html is a SINGLE self-contained HTML file (no JS lookups, no RSS).
+Embeds use iframe src = youtube.com/embed/<VIDEO_ID>?autoplay=1&mute=1&controls=1&rel=0
+mute=1 required by browser autoplay policy; user taps to unmute per box.
+
+Start of day facts
+Node.js IS installed (C:\Program Files\nodejs\node.exe) — used serve.js to test locally.
+Python is NOT installed (only MS Store broken stub).
+Chrome at default path.
+
+NEXT-STEP / LIMITATIONS
+- ID updates: when a channel's stream rotates (Geo/92/24/ARY cycle rarely; City 42 constantly),
+  update index.html and push. Use watch-page check: isLive:true + lengthSeconds:0 = stable 24/7.
+- "Live stream recording not available" = ID is a finished stream -> needs refresh.
+- Black bars / aspect ratio: normal (F11/zoom is TV-side). Do NOT bake in CSS scale() zoom —
+  earlier 1.3x attempt was rejected by user (too big).
+- ARY IDs seen: 38IEolI8f-w (older), 5FW9ZVMR_7M (current LIVE).
+- GitHub PAT used at deploy time has been removed from git config (clean remote URL).
