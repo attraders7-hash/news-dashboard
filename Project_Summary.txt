@@ -3,11 +3,11 @@ Project: 4-Channel News Dashboard (GitHub Pages — LED TV)
 Goal: A 2x2 grid of 4 Pakistani YouTube live news channels that runs in ANY Chrome browser —
 including an LED TV's browser — via a public URL. No PC/ server required at the TV.
 
-Status: FRESH COPY — READY FOR NEW DEPLOYMENT
+Status: DEPLOYED & LIVE (Sep 2026)
 
 Live URL
-TBD — this copy deploys to a NEW GitHub Pages link (not the old news-dashboard link).
-Once deployed, open the new URL in any Chrome (Fully Kiosk Browser on Android TV recommended for fullscreen).
+https://attraders7-hash.github.io/news-dashboard/
+Open this in any Chrome (Fully Kiosk Browser on Android TV recommended for fullscreen).
 
 Actual live view for the TV
 All embeds verified currently-LIVE unless noted.

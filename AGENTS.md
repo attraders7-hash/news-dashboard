@@ -3,9 +3,9 @@
 ## Project Overview
 A 2×2 grid of 4 Pakistani YouTube live news channels that runs in ANY Chrome browser — including an LED TV's browser — via a public URL. No PC/server required at the TV.
 
-## Status: FRESH COPY — READY FOR NEW DEPLOYMENT
-- **Live URL:** TBD (new GitHub Pages link, not yet deployed)
-- **Hosting:** GitHub Pages (new repo to be created; branch `main`, path `/`)
+## Status: DEPLOYED & LIVE
+- **Live URL:** `https://attraders7-hash.github.io/news-dashboard/`
+- **Hosting:** GitHub Pages (repo `attraders7-hash/news-dashboard`, branch `main`, path `/`)
 - **Deployed file:** single self-contained `index.html`, pushed via `git` (git installed; `gh` CLI NOT installed)
 
 ## Current Video IDs (in deployed index.html)
