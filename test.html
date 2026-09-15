@@ -19,12 +19,20 @@
   }
   .cell { position: relative; background: #000; border: 3px solid transparent; outline: none; }
   .cell.selected { border-color: #ffd400; }
-  iframe { width: 100%; height: 100%; border: 0; pointer-events: none; }
+  iframe { width: 100%; height: 100%; border: 0; }
   .label {
     position: absolute; top: 8px; left: 8px; z-index: 5;
     background: rgba(0,0,0,0.7); color: #fff;
     font-size: 14px; padding: 4px 10px; border-radius: 3px;
   }
+  .chbtn {
+    position: absolute; bottom: 8px; right: 8px; z-index: 6;
+    background: rgba(0,0,0,0.7); color: #ffd400;
+    font-size: 14px; font-weight: bold; padding: 6px 14px;
+    border: 1px solid #ffd400; border-radius: 3px; cursor: pointer;
+    user-select: none;
+  }
+  .chbtn:hover, .chbtn:active { background: #ffd400; color: #000; }
   .hint {
     position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%);
     z-index: 20; background: rgba(0,0,0,0.75); color: #fff;
@@ -53,10 +61,10 @@
 </head>
 <body>
   <div class="grid">
-    <div class="cell selected" tabindex="0"><div class="label">Geo News</div><iframe allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/t3fvgmDDmdc?autoplay=1&mute=1&controls=1&rel=0"></iframe></div>
-    <div class="cell" tabindex="0"><div class="label">92 News HD</div><iframe allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/PfO2i8XReZA?autoplay=1&mute=1&controls=1&rel=0"></iframe></div>
-    <div class="cell" tabindex="0"><div class="label">Dunya News</div><iframe allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/e2XVSUYh4S0?autoplay=1&mute=1&controls=1&rel=0"></iframe></div>
-    <div class="cell" tabindex="0"><div class="label">ARY News</div><iframe allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/5FW9ZVMR_7M?autoplay=1&mute=1&controls=1&rel=0"></iframe></div>
+    <div class="cell selected" tabindex="0"><div class="label">Geo News</div><div class="chbtn">&#8681; CH</div><iframe allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/t3fvgmDDmdc?autoplay=1&mute=1&controls=1&rel=0"></iframe></div>
+    <div class="cell" tabindex="0"><div class="label">92 News HD</div><div class="chbtn">&#8681; CH</div><iframe allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/PfO2i8XReZA?autoplay=1&mute=1&controls=1&rel=0"></iframe></div>
+    <div class="cell" tabindex="0"><div class="label">Dunya News</div><div class="chbtn">&#8681; CH</div><iframe allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/e2XVSUYh4S0?autoplay=1&mute=1&controls=1&rel=0"></iframe></div>
+    <div class="cell" tabindex="0"><div class="label">ARY News</div><div class="chbtn">&#8681; CH</div><iframe allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/5FW9ZVMR_7M?autoplay=1&mute=1&controls=1&rel=0"></iframe></div>
   </div>
 
   <div id="overlay">
@@ -66,7 +74,7 @@
     </div>
   </div>
 
-  <div class="hint">ARROWS = select tile &nbsp;|&nbsp; OK = change channel &nbsp;|&nbsp; BACK = close</div>
+  <div class="hint">TAP video = controls (skip ads) &nbsp;|&nbsp; TAP &#8681; CH = change channel &nbsp;|&nbsp; remote: OK on tile = change channel</div>
 
 <script>
   var CHANNELS = [
@@ -161,7 +169,9 @@
     else if (k === "Backspace") { e.preventDefault(); location.reload(); }
   });
 
-  cells.forEach(function (c, i) { c.onclick = function () { sel = i; render(); openPicker(i); }; });
+  document.querySelectorAll(".chbtn").forEach(function (b, i) {
+    b.onclick = function (e) { e.stopPropagation(); sel = i; render(); openPicker(i); };
+  });
   render();
 </script>
 </body>
