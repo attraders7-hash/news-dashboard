@@ -16,7 +16,7 @@ ask the assistant to refresh the ID (it re-verifies live status and pushes a fix
 
 KEY DIFFERENCE (why some channels work forever)
 24/7 channels = ONE never-ending live stream, one stable ID:
-Madina Live 3Ae6ANoLnos   (LIVE)  [replaced Geo News t3fvgmDDmdc]
+Madina Live rHWSRMcGGBQ   (LIVE)  [replaced old ID 3Ae6ANoLnos]
    Makkah Live qjUTWWftNjc   (LIVE)  [replaced 92 News HD PfO2i8XReZA]
    Dunya News  e2XVSUYh4S0   (LIVE)
    ARY News    5FW9ZVMR_7M   (LIVE)
