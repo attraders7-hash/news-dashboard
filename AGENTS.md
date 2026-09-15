@@ -9,9 +9,9 @@ A 2×2 grid of 4 Pakistani YouTube live news channels that runs in ANY Chrome br
 - **Deployed file:** single self-contained `index.html`, pushed via `git` (git installed; `gh` CLI NOT installed)
 
 ## Current Video IDs (in deployed index.html)
-- Top-left (Madina Live, replaced Geo News): `rHWSRMcGGBQ` — LIVE (verified 2026-09-15; old ID `ge2Xn-Lwk3U` was dead)
-- Top-right (Makkah Live, replaced 92 News HD): `qjUTWWftNjc` — LIVE (old 92 News ID `PfO2i8XReZA`)
-- Bottom-left (Dunya News): `e2XVSUYh4S0` — LIVE (replaced City 42, then 24 News)
+- Top-left (Geo News, restored over Madina): `t3fvgmDDmdc` — LIVE (verified 2026-09-15)
+- Top-right (92 News HD, restored over Makkah): `PfO2i8XReZA` — LIVE (verified 2026-09-15)
+- Bottom-left (Dunya News): `e2XVSUYh4S0` — LIVE
 - Bottom-right (ARY News): `5FW9ZVMR_7M` — LIVE
 
 ## Key Lesson: 24/7 vs one-off streams
