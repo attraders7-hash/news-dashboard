@@ -10,7 +10,7 @@ A 2×2 grid of 4 Pakistani YouTube live news channels that runs in ANY Chrome br
 
 ## Current Video IDs (in deployed index.html)
 - Top-left (Geo News, restored over Madina): `t3fvgmDDmdc` — LIVE (verified 2026-09-15)
-- Top-right (92 News HD, restored over Makkah): `PfO2i8XReZA` — LIVE (verified 2026-09-15)
+- Top-right (92 News HD, restored over Makkah): `B3X6wZi5PX4` — LIVE (replaced `PfO2i8XReZA`, 2026-09-29)
 - Bottom-left (Dunya News): `e2XVSUYh4S0` — LIVE
 - Bottom-right (ARY News): `5FW9ZVMR_7M` — LIVE
 
