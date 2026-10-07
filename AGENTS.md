@@ -10,7 +10,7 @@ A 2×2 grid of 4 Pakistani YouTube live news channels that runs in ANY Chrome br
 
 ## Current Video IDs (in deployed index.html)
 - Top-left (Geo News, restored over Madina): `t3fvgmDDmdc` — LIVE (verified 2026-09-15)
-- Top-right (92 News HD, restored over Makkah): `B3X6wZi5PX4` — LIVE (replaced `PfO2i8XReZA`, 2026-09-29)
+- Top-right (92 News HD): `kZK2BiSdC68` — LIVE (replaced `B3X6wZi5PX4`, which went PRIVATE, 2026-10-07)
 - Bottom-left (Dunya News): `e2XVSUYh4S0` — LIVE
 - Bottom-right (ARY News): `5FW9ZVMR_7M` — LIVE
 
@@ -23,6 +23,9 @@ A 2×2 grid of 4 Pakistani YouTube live news channels that runs in ANY Chrome br
 - Error "Video unavailable" or "Live stream recording not available" = that stream's ID rotated/ended.
 - Fix: verify a `watch?v=<ID>` page for `"isLive":true` + `"lengthSeconds":0` (stable 24/7), update `index.html`, push to GitHub Pages (~1 min).
 - ARY ID history: `38IEolI8f-w` (old) → `5FW9ZVMR_7M` (current).
+- 92 News ID history: `PfO2i8XReZA` → `B3X6wZi5PX4` (went Private) → `kZK2BiSdC68` (current).
+- Fastest way to re-find a channel's current 24/7 live: open `https://www.youtube.com/@<handle>/live` — the canonical link points at the live video ID. 92 News handle = `@92newshdTv`.
+- `youtube.com/oembed?url=...` works without login: 200 + title = video exists; `Forbidden` = private/deleted.
 
 ## Hosting notes / machine facts
 - No Python installed (only broken MS Store stub). Do NOT rely on Python.

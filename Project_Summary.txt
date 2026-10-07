@@ -17,7 +17,7 @@ ask the assistant to refresh the ID (it re-verifies live status and pushes a fix
 KEY DIFFERENCE (why some channels work forever)
 24/7 channels = ONE never-ending live stream, one stable ID:
 Geo News   t3fvgmDDmdc   (LIVE)  [restored over Madina Live]
-   92 News HD  B3X6wZi5PX4   (LIVE)  [PfO2i8XReZA recording gone 2026-09-29]
+   92 News HD  kZK2BiSdC68   (LIVE)  [B3X6wZi5PX4 went Private 2026-10-07; earlier PfO2i8XReZA died 2026-09-29]
    Dunya News  e2XVSUYh4S0   (LIVE)
    ARY News    5FW9ZVMR_7M   (LIVE)
 
